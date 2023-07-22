@@ -1,0 +1,42 @@
+% This file contains the preamble for the main tex file.
+% This includes all imports, settings, and user-defined commands/macros.
+
+% Manage subfiles
+\usepackage{subfiles}
+
+% Encoding and language settings
+\usepackage[utf8]{inputenc} % Allows for input of special characters
+\usepackage[T1]{fontenc} % Better font encoding
+\usepackage[english]{babel} % English language/hyphenation
+
+% Paragraph formatting
+\usepackage{parskip} % Empty line in tex = empty line in pdf
+\setlength{\parindent}{0pt} % No indentation at start of paragraph
+
+
+% Graphics and figures packages
+\usepackage{graphicx} % Insert figures
+\usepackage{float} % More control over figure placement
+
+% Math packages
+\usepackage{amsmath} % Better math support & more symbols
+\usepackage{amssymb} % Additional math symbols
+\usepackage{amsthm} % For theorem environments
+\usepackage{mathtools} % Supplement to amsmath, additional features
+
+% Theorem style (can be customized)
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section] % New theorem environment
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref} % Make hyperlinks in your document
+% 'hidelinks' hides the red box that appears around hyperlinked text in the digital version
+
+% References
+\usepackage{cleveref} % Improved cross-referencing
+
+
+% Setting up better label naming
+% Format: \label{type:name}
+% Examples: \label{fig:results}, \label{tab:data}, \label{sec:intro}, \label{eq:emc2}
+

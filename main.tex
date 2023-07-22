@@ -1,0 +1,32 @@
+% Document class, 12pt fonts and report type
+\documentclass[12pt]{report}
+
+\input{preamble.tex}
+
+\begin{document}
+
+    \input{titlepage.tex}
+
+    \tableofcontents
+
+    % Load each chapter
+    \subfile{chapters/introduction/main}
+    \subfile{chapters/chapter1/main}
+    \subfile{chapters/chapter2/main}
+    \subfile{chapters/chapter3/main}
+    \subfile{chapters/chapter4/main}
+    \subfile{chapters/chapter5/main}
+    \subfile{chapters/chapter6/main}
+    \subfile{chapters/chapter7/main}
+    \subfile{chapters/conclusion/main}
+    % ...
+
+    \chapter*{Summary}
+    \addcontentsline{toc}{chapter}{Summary}
+    \input{summary.tex}
+
+    % Load the bibliography
+    \bibliography{references}
+    \bibliographystyle{plain}
+
+\end{document}
